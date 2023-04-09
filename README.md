@@ -11,15 +11,16 @@
 
 > Backend for creating a fast api using json-server with https
 
-## Run api
+
+## Install
 
 ```sh
-node server.js
+npm install
 ```
 
-## Usage
+## Setup
 
-You need openssl to generate the autosigned certificates for https.
+You need openssl to generate the autosigned certificates for https. Create a folder named /certs and put inside the key and the cert.
 
 
 ```sh
@@ -30,10 +31,10 @@ openssl req -x509 -new -nodes -key cert.key -days 365 -out cert.crt
 
 ```
 
-## Run tests
+## Run
 
 ```sh
-npm run test
+node server.js
 ```
 
 ## Author
